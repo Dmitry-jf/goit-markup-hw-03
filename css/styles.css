@@ -26,13 +26,16 @@ h1,h2,h3,h4,h5,h6, p{
 
 .container {
     max-width: 1158px;
-    padding-left: 0 15px;
+    padding: 0 15px;
     margin: 0 auto;
 
 }
 /* header */
 
-
+.label-header {
+    padding: 24px 0;
+    margin-right: 76px;   
+}
 
 .container .header-wrapper {
     display: flex;
@@ -61,10 +64,7 @@ h1,h2,h3,h4,h5,h6, p{
     gap: 40px;
 }
 
-.label-header {
-padding: 24px 0;
-margin-right: 76px;
-}
+
 
 .header-nav > a, .bottom-section a {
     font-family: "Raleway", sans-serif;
@@ -106,60 +106,98 @@ margin-right: 76px;
         line-height: 150%;
         letter-spacing: 0.02em;
         list-style: normal;
+        padding: 24px 0;
        
     }
 
-  
-    .info .email:hover, .info .email:focus {
+ .info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+ }
+
+    .contacts-link:hover, .contacts-link:focus {
         color: #404bbf;
     }
 
 
     /* Main */
 
+/* section 1 */
+
 
  .title {
     background-color: #2E2F42;
+    min-height: 600px;
  }
+
+ 
+
+    
     h1 {
+        
         font-weight: 700;
         font-size: 56px;
         line-height: 107%;
         letter-spacing: 0.02em;
-        text-align: center;
         color: #FFFFFF;
     }
 
     .title-text {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
         margin-bottom: 48px;
-        padding: 188px 472px 0;
-    }
+        max-width: 496px;
+        padding-top: 188px;
+ }
+         
+.title .title-but {
+        display: block;
+        white-space: nowrap;
+        gap: 10px;
+        padding: 16px 32px;
+        margin: 0 auto;
+        
 
-    .title > button {
+        width: 169px;
+        height: 56px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+        
+        border-radius: 4px;
         color: #FFFFFF;
         background-color: #4D5AE5;
         font-weight: 500;
         font-size: 16px;
         line-height: 150%;
         letter-spacing: 0.04em;
-        cursor: pointer;
-     }
-
-.title .title-but {
-    margin-bottom: 188px;
-
+        cursor:pointer;
+      
 }
 
      .title .title-but:hover, .title .title-but:focus {
         background-color: #404BBF;
      }
-      
 
-     /* 2 - Description */
-   .description .descrip-wrapper {
-        margin-top: 120px;
-        margin-bottom: 120px;
-    }
+      
+    /* section 2 */
+
+         .descrip-wrapper {
+             max-width: 1128px;
+          
+         }
+
+
+
+.descrip-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+}
 
      .description h3 {
         font-weight: 500;
@@ -168,21 +206,36 @@ margin-right: 76px;
         letter-spacing: 0.02em;
         color: #2E2F42;
         margin-bottom: 8px;
+
+       
      }
 
-     .description p {
+     .description p {   
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
         letter-spacing: 0.02em;
         color: #434455;
+
      }
+
+     .item-strategy {
+        margin: 0 auto;
+        max-width: 264px;
+        height: 104px;
+        width: calc((100% - 24px * 3) / 4);
+    }
+
 
 
 /* 3 - Team */
-.team-wrapper {
-    padding-top: 120px;
 
+
+.ourteam {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 120px;
+    margin-bottom: 72px;
 }
 
 .team {
@@ -190,24 +243,58 @@ margin-right: 76px;
 }
 
 .teamlist {
-    background-color: #FFFFFF;
+        width: calc ((100% - 50px * 3) / 4);
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 32px;
+        border-radius: 0 0 4px 4px;
+        padding: 0px 0px 32px 0px;
+        width: 264px;
+        height: 380px;
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        background: #fff;
+        width: calc((100% - 24px * 3) / 4);
 }
 
-.team .ourteam-list {
-    margin-bottom: 120px;
+    .team-images {
+        max-width: 100%;
+        object-fit: contain;
 }
+
+
+.team .ourteam-list {
+        gap: 24px;
+        display: flex;
+        padding-bottom: 120px;  
+       
+}    
+
+.team-character {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+        max-width: 232px;
+            height: 56px;
+            padding: 32px 16px;
+}
+
+
+
      .team h2 {
         font-weight: 600;
         font-size: 36px;
         line-height: 111%;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        text-align: center;
         color: #2E2F42;
-        margin-bottom: 72px;
      }
 
-     .ProductDesigner {
+     .descr-strategy {
         font-size: 16px;
      }
 
@@ -217,7 +304,7 @@ margin-right: 76px;
         line-height: 120%;
         letter-spacing: 0.02em;
         text-align: center;
-        color: #2E2F42;            ;
+        color: #2E2F42;            
      }
 
      .team p {
@@ -227,6 +314,7 @@ margin-right: 76px;
         letter-spacing: 0.02em;
         text-align: center;
         color: #434455;
+        margin-top: 8px;
      }
 
 
@@ -252,6 +340,16 @@ margin-right: 76px;
         margin-bottom: 72px;
          }
 
+
+        .portfolio-list {
+                 display: flex;
+                 margin: 0 auto;
+                 flex-wrap: wrap;
+                 gap:24px;
+}
+
+
+
      .portfolio-list h3 {
         font-weight: 500;
         font-size: 20px;
@@ -269,9 +367,32 @@ margin-right: 76px;
             color: #434455;
          }
 
+                 .portfolio-container {
+                     display: flex;
+                     align-items: flex-start;
+                     justify-content: center;
+                     flex-direction: column;
+                     gap: 8px;
+                     border-bottom: 1px solid #e7e9fc;
+                     border-left: 1px solid #e7e9fc;
+                     border-right: 1px solid #e7e9fc;
+                     padding: 32px 16px;
+                     width: 360px;
+                     height: 120px;
+                 }
+
                  .bottom-section {
                     background-color: #2E2F42;
                  }
+
+.bottom-wrapper {
+    display: block;
+    max-width: 264px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: left;
+}
+
     .bottom-section p {
             font-weight: 400;
             font-size: 16px;
