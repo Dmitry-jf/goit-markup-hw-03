@@ -28,9 +28,20 @@ h1,h2,h3,h4,h5,h6, p{
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
+    display: flex;
 
 }
+
+img {
+    display: block;
+}
+
+
 /* header */
+
+.header {   
+    border-bottom: 1px solid #e7e9fc;
+}
 
 .label-header {
     padding: 24px 0;
@@ -40,7 +51,7 @@ h1,h2,h3,h4,h5,h6, p{
 .container .header-wrapper {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #e7e9fc;
+   
 }
 
 .header-nav {
