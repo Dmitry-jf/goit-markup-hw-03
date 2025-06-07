@@ -200,8 +200,8 @@ border-bottom: 1px solid #e7e9fc;
              white-space: nowrap;
              clip-path: inset(100%);
              clip: rect(0 0 0 0);
-            margin-bottom: 8px;
-             overflow: hidden;     
+             overflow: hidden;  
+             visibility: hidden;
     }
 
      .description h3 {
@@ -210,7 +210,7 @@ border-bottom: 1px solid #e7e9fc;
             line-height: 120%;
             letter-spacing: 0.02em;
             color: #2E2F42;
-            padding-bottom: 8px;
+            margin-bottom: 8px;
      }
 
      .description p {
@@ -358,13 +358,10 @@ border-bottom: 1px solid #e7e9fc;
 
         .bottom-section {
                     background-color: #2E2F42;
+                    padding: 100px 0;
                  }
 
 
-        .footer-wrap {
-            padding: 100px 0;
-    }
-    
      .bottom-section .label {
         display: inline-block;
         margin-bottom: 16px;
