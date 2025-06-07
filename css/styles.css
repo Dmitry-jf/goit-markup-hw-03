@@ -299,7 +299,8 @@ border-bottom: 1px solid #e7e9fc;
     .portfolio-list {
      display: flex;
      flex-wrap: wrap;
-     gap: 24px;
+     row-gap: 48px;
+     column-gap: 24px;
  }
 
   /* .second {
