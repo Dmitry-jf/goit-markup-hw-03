@@ -19,6 +19,10 @@ address {
     font-style: normal;
 }
 
+img {
+    display: block;
+}
+
 .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -35,10 +39,14 @@ h1,h2,h3,h4,h5,h6,p {
 }
 /* header */
 
+.page-header {
+border-bottom: 1px solid #e7e9fc;
+}
+
+
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
@@ -127,6 +135,7 @@ h1,h2,h3,h4,h5,h6,p {
 
  .title {
     background-color: #2E2F42;
+    padding: 188px 0;
  }
     h1 {
         font-weight: 700;
@@ -152,12 +161,13 @@ h1,h2,h3,h4,h5,h6,p {
         margin: 0 auto;
         padding: 16px 32px;
         border-radius: 4px;
+        min-width: 169px;
+        height: 56px;
+        border: none;
         /* max-width: 169px; */
      }
 
-.title-wrap {
-    padding: 188px 0;
-}
+
 
      .title .title-but:hover, .title .title-but:focus {
         background-color: #404BBF;
@@ -190,6 +200,7 @@ h1,h2,h3,h4,h5,h6,p {
              white-space: nowrap;
              clip-path: inset(100%);
              clip: rect(0 0 0 0);
+            margin-bottom: 8px;
              overflow: hidden;     
     }
 
@@ -232,12 +243,13 @@ h1,h2,h3,h4,h5,h6,p {
         max-width: 264px;
         width: calc((100% - 72px) / 4);
         border-radius: 0 0 4px 4px;
-        padding: 0px 0px 32px 0px;
         box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
         overflow: hidden;
 }
 
-
+.person-description {
+    padding: 32px 0;
+}
 
      .team h2 {
         font-weight: 600;
@@ -259,8 +271,7 @@ h1,h2,h3,h4,h5,h6,p {
             letter-spacing: 0.02em;
             text-align: center;
             color: #2E2F42;   
-            padding-top: 32px;   
-            padding-bottom: 8px;      
+            margin-bottom: 8px;
      }
 
      .team p {
@@ -287,12 +298,13 @@ h1,h2,h3,h4,h5,h6,p {
 
     .portfolio-list {
      display: flex;
+     flex-wrap: wrap;
      gap: 24px;
  }
 
-  .second {
+  /* .second {
     margin-top: 48px;
-  }
+  } */
 
  .description-wrap {
     display:flex;
@@ -350,9 +362,13 @@ h1,h2,h3,h4,h5,h6,p {
 
 
         .footer-wrap {
-            padding-top: 100px;
-            padding-bottom: 100px;
+            padding: 100px 0;
     }
+    
+     .bottom-section .label {
+        display: inline-block;
+        margin-bottom: 16px;
+     }
 
         .bottom-section p {
             font-weight: 400;
@@ -360,7 +376,6 @@ h1,h2,h3,h4,h5,h6,p {
                 line-height: 150%;
                 letter-spacing: 0.02em;
                 color: #F4F4FD;
-                margin-top: 16px;
                 max-width: 264px;
         }
 
